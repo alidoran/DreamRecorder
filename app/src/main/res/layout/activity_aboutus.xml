@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/textaboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#e86014"
+        android:text="alidoran@gmail.com"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        />
+    <Button
+        android:id="@+id/btnaboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@drawable/button_style"
+        />
+
+
+
+</LinearLayout>

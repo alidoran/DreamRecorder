@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/dialog_delete_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/renamelogo"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:id="@+id/txtviewrename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="Are you sure to rename file?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="please enter new file name"/>
+
+    <EditText
+        android:id="@+id/txtinputrename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="your file name ..."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/btnyesrename"
+            android:text="YES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/button_style"
+
+            />
+
+        <Button
+            android:id="@+id/btnnorename"
+            android:text="NO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/button_style"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

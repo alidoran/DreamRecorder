@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000"
+    android:orientation="vertical"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="right">
+
+    <ImageView
+        android:id="@+id/imgaboutus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/aboutus"
+        />
+>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="9">
+
+        <ImageView
+            android:id="@+id/imgmic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/microphoneoff" />
+
+        <ImageView
+            android:id="@+id/imgrec"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:src="@mipmap/recording"
+            android:launchMode="singleTop"
+            />
+
+        <TextView
+            android:id="@+id/txttimet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="00:00:00"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="select your record format"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgformat"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbmp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="mp4"
+                android:textColor="#fff"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbamr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="amr"
+                android:textColor="#fff" />
+
+
+
+            <RadioButton
+                android:id="@+id/rbaac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="aac"
+                android:textColor="#fff" />
+
+            <RadioButton
+                android:id="@+id/rb3gp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="3gp"
+                android:textColor="#fff" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="choose your input method"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rginput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="phone"
+                android:textColor="#fff"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbbluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#fff"
+                android:text="Bluetooth"
+                android:textColor="#fff" />
+        </RadioGroup>
+        <ir.tapsell.sdk.bannerads.TapsellBannerView
+            android:id="@+id/tapsell_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tapsell_banner_type="banner_320x100"
+            android:layout_gravity="center_horizontal"
+            app:tapsell_zone_id="5a28f47539086d0001670416" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
